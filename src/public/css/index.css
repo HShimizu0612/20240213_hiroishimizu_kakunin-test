@@ -1,0 +1,209 @@
+.content {
+    max-width: 1500px;
+    text-align: center;
+    font-family: 'Inika', 'メイリオ', serif;
+    color: #82756a;
+}
+
+.content__title {
+    margin: 50px auto;
+    font-size: 25px;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+.contact-form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form__table {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+tr {
+    height: 70px;
+}
+
+tr:last-child {
+    height: 200px;
+    vertical-align: top;
+}
+
+th {
+    width: 40%;
+    text-align: left;
+}
+
+span {
+    color: #ff9999;
+}
+
+td {
+    width: 60%;
+    text-align: left;
+}
+
+input,
+select,
+textarea {
+    margin: 15px 0;
+    padding: 10px 20px;
+    border: none;
+    font-family: 'Inika', 'メイリオ', serif;
+    background: #f4f4f4;
+    color: #82756a;
+}
+
+::placeholder {
+    font-family: 'Inika', 'メイリオ', serif;
+    color: #BEB2A6;
+}
+
+.contact-form__name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-form__name-input {
+    width: 45%;
+}
+
+.contact-form__gender-input {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: insert(50%);
+}
+
+label {
+    position: relative;
+    padding: 0 50px 0 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+label:last-child {
+    padding-right: 0;
+}
+
+label::before,
+label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    border-radius: 50%;
+}
+
+label::before {
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    border: 1px solid #82756a;
+    border-radius: 50%;
+}
+
+label::after {
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    border-radius: 50%;
+    background: #82756a;
+    opacity: 0;
+}
+
+.contact-form__gender-input:checked+label::after {
+    opacity: 1;
+}
+
+.contact-form__email-input,
+.contact-form__tel-input,
+.contact-form__address-input,
+.contact-form__building-input,
+.contact-form__detail-input {
+    width: 100%;
+}
+
+/* 電話番号フォームを3分割に出来るようになったら適用
+.contact-form__tel {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-form__tel-input {
+    width: 30%;
+    margin: 15px 0;
+    text-align: center;
+}
+*/
+
+.contact-form__category {
+    position: relative;
+}
+
+.contact-form__category::before {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    content: "";
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: #BEB2A6 transparent transparent transparent;
+    pointer-events: none;
+}
+
+select {
+    width: 50%;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+option {
+    font-family: 'Inika', 'メイリオ', serif;
+    color: #82756a;
+}
+
+option:first-of-type {
+    display: none;
+    color: #BEB2A6;
+}
+
+.contact-form__detail-input {
+    resize: none;
+    padding-top: 20px;
+}
+
+.contact-form__button {
+    margin: 50px auto;
+}
+
+.contact-form__button-submit {
+    padding: 5px 20px;
+    border: 1px solid #82756a;
+    text-align: center;
+    background: #82756a;
+    color: #fff;
+}

@@ -1,0 +1,91 @@
+.header__utilities {
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 40px;
+    right: 5%;
+}
+
+.header-nav__link {
+    padding: 5px 10px;
+    border: 2px solid #D9C6B6;
+    text-decoration: none;
+    font-size: 20px;
+    background: #F1ECE6;
+    color: #D9C6B6;
+}
+
+.content {
+    max-width: 1500px;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Inika', 'メイリオ', serif;
+    background: #F1ECE6;
+    color: #82756a;
+}
+
+.content__title {
+    margin: 0px auto 50px auto;
+    font-size: 25px;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+.content__item {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border: 2px solid #DAD2CA;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.login-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.login-form__email,
+.login-form__pass {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 25px auto;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input {
+    margin: 15px 0;
+    padding: 20px 20px;
+    border: none;
+    background: #f4f4f4;
+    color: #82756a;
+}
+
+::placeholder {
+    font-family: 'Inika', 'メイリオ', serif;
+    color: #BEB2A6;
+}
+
+.login-form__button {
+    margin-top: 50px;
+}
+
+.login-form__button-submit {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1px solid #82756a;
+    background: #82756a;
+    color: #fff;
+}

@@ -1,0 +1,67 @@
+.content {
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Inika', 'メイリオ', serif;
+    color: #82756a;
+}
+
+.content__title {
+    margin: 50px auto;
+    font-size: 25px;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+.confirm-table {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+tr {
+    border: 1px solid #EEEEED;
+    text-align: left;
+}
+
+th {
+    width: 30%;
+    padding: 20px 60px;
+    background: #BAA899;
+    color: #fff;
+}
+
+td {
+    width: 70%;
+    padding: 20px 40px;
+}
+
+.confirm-form__name {
+    display: flex;
+    flex-direction: row;
+}
+
+.confirm-table__buttons {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.confirm-table__button,
+.confirm-table__fix {
+    margin: 0 20px;
+}
+
+.confirm-table__button-submit {
+    padding: 5px 25px;
+    border: 1px solid #82756a;
+    font-size: 15px;
+    background: #82756a;
+    color: #fff;
+}
+
+.confirm-table__fix-link {
+    vertical-align: center;
+    color: #82756a;
+}
