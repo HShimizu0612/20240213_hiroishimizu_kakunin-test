@@ -35,7 +35,7 @@
                 @enderror
             </div>
             <div class="login-form__button">
-                <button class="login-form__button-submit" type="submit">ログイン</button>
+                <input class="login-form__button-submit" type="submit" value="ログイン">
             </div>
         </form>
     </div>

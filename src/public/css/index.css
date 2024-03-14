@@ -137,7 +137,7 @@ label::after {
     width: 100%;
 }
 
-/* 電話番号フォームを3分割に出来るようになったら適用
+/*
 .contact-form__tel {
     display: flex;
     justify-content: space-between;

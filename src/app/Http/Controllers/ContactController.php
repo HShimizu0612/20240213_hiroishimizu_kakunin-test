@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
 use App\Models\Contact;
 use App\Models\Category;
+use Illuminate\Support\Facades\Log;
 
 class ContactController extends Controller
 {
@@ -16,16 +17,30 @@ class ContactController extends Controller
         return view('index', compact('categories'));
     }
 
-    public function confirm(ContactRequest $request)
+    public function confirm(Request $request)
     {
-        $contact = $request->only(['category_id', 'first_name', 'last_name', 'gender', 'email','tel', 'address', 'detail']);
-        return view('confirm', compact('contact'));
+        $contact = $request->only(['category_id', 'first_name', 'last_name', 'gender', 'email', 'tel', 'address', 'building', 'detail']);
+        $category = Category::find($request->category_id);
+        log::info($contact);
+        return view('confirm', compact('contact', 'category'));
     }
 
-    public function store(ContactRequest $request)
+    public function store(Request $request)
     {
-        $contact = $request->only(['category_id', 'first_name', 'last_name', 'gender', 'email', 'tel', 'address', 'detail']);
-        Contact::create($contact);
+        return $request;
+        Contact::create(
+            $request->only([
+                'category_id',
+                'first_name',
+                'last_name',
+                'gender',
+                'email',
+                'tel',
+                'address',
+                'building',
+                'detail'
+            ])
+        );
         return view('thanks');
     }
 
