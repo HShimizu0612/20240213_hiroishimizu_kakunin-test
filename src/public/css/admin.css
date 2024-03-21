@@ -206,6 +206,7 @@ option:first-of-type {
 }
 
 .pagination {
+    display: block;
     width: 50%;
 }
 
