@@ -54,8 +54,13 @@
                 <button class="search-form__button-reset" type="">リセット</button>
             </div>
         </form>
-        <div class="export">
-            <button class="export__button">エクスポート</button>
+        <div class="exports">
+            <div class="export">
+                <button class="export__button">エクスポート</button>
+            </div>
+            <div class="pagination">
+                {{ $contacts->links() }}
+            </div>
         </div>
         <div class="search-result">
             <table class="result-table">

@@ -42,7 +42,7 @@
                     <th>電話番号</th>
                     <td class="confirm-form__tel">
                         {{ $contact['tel'] }}
-                        <input type="hidden" name="tel" valule="{{ $contact['tel'] }}">
+                        <input type="hidden" name="tel" value="{{ $contact['tel'] }}">
                     </td>
                 </tr>
                 <tr>

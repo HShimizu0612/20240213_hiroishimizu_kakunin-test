@@ -188,6 +188,11 @@ option:first-of-type {
     cursor: pointer;
 }
 
+.exports {
+    display: flex;
+    justify-content: space-between;
+}
+
 .export {
     margin: 20px 0;
     text-align: left;
@@ -198,6 +203,10 @@ option:first-of-type {
     border: 1px solid #EDEAE6;
     background: #EDEAE6;
     color: #82756a;
+}
+
+.pagination {
+    width: 50%;
 }
 
 .result-table {

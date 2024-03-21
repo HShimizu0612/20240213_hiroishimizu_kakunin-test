@@ -19,8 +19,8 @@ Route::get('/', [ContactController::class, 'index']);
 Route::post('/confirm', [ContactController::class, 'confirm']);
 Route::post('/thanks', [ContactController::class, 'store']);
 
-Route::middleware('auth')->group(function () {
-    Route::get('/admin', [UserController::class, 'admin']);
-    Route::get('/admin/search', [ContactController::class, 'search']);
-});
+// Route::middleware('auth')->group(function () {
+Route::get('/admin', [UserController::class, 'admin']);
+Route::get('/admin/search', [ContactController::class, 'search']);
+// });
 Route::post('/register', [UserController::class, 'create']);

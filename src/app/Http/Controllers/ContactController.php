@@ -27,7 +27,6 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
-        return $request;
         Contact::create(
             $request->only([
                 'category_id',
